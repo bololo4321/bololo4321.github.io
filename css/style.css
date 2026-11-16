@@ -1,0 +1,28 @@
+.cube{
+    width: 40px;
+    height: 40px;
+    background-color: #00ffff;
+    border-radius: 8px;
+    margin: 300px 300px;
+}
+/*
+一定要有大括號裡面是動畫的時間點 
+1.from{}to{}
+2.0~100%
+*/
+@keyframes scale{
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    100%{
+        transform: rotate(270deg) scale(3);
+    }
+}
+.cube{
+    animation: scale 2s linear infinite;
+}
+/* @keyframes scale{
+    0%{
+        
+    }
+} */
